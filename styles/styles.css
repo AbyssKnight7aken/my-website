@@ -1,6 +1,12 @@
 @import url(reset.css);
 @import url(typography.css);
-
-* {
-    background-color: red;
-}
+@import url(layout.css);
+@import url(navigation.css);
+@import url(responsive-nav.css);
+@import url(profile.css);
+@import url(about.css);
+@import url(experience.css);
+@import url(projects.css);
+@import url(contacts.css);
+@import url(footer.css);
+@import url(media.css);

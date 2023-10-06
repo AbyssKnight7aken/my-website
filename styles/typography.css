@@ -7,5 +7,10 @@ body, input, textarea {
 }
 
 p, ul, ol {
-    padding-bottom: 1.5em;
+    padding-bottom: 0;
+    margin-bottom: 0.8em;
 }
+
+p {
+    color: rgb(85, 85, 85);
+  }

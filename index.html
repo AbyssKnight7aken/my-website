@@ -1,12 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Radoslav Petrov Portfolio</title>
     <link rel="stylesheet" href="/styles/styles.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-    
+
+    <div class="site">
+
+        <div class="site-header">
+
+            <nav id="desktop-nav" class="main-nav">
+
+                <div class="logo">
+                    <p>Radoslav Petrov</p>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                </ul>
+
+            </nav>
+
+            <nav id="hamburger-nav">
+
+                <div class="logo">
+                    <p>Radoslav Petrov</p>
+                </div>
+
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu-links">
+                        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+
+        <main class="site-content">
+
+            <section id="profile">
+                <div class="section__pic-container">
+                    <img src="public/profile-pic.png" alt="profile picture" />
+                </div>
+                <div class="section__text">
+                    <p class="section__text__p1">Hello, I'm</p>
+                    <h1 class="title">Radoslav Petrov</h1>
+                    <p class="section__text__p2">Fullstack Web Developer</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2" onclick="window.open('public/my-resume.pdf')">
+                            Download Resume
+                        </button>
+                        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                            Contact Info
+                        </button>
+                    </div>
+                    <div id="socials-container">
+                        <a href="https://github.com/AbyssKnight7aken" target="_blank" rel="noopener noreferrer"><img src="public/github.png"
+                                alt="My Github profile" class="icon" /></a>
+                        <a href="https://www.linkedin.com/in/radoslav-petrov-920a9b12a" target="_blank" rel="noopener noreferrer"><img
+                                src="public/linkedin.png" alt="My LinkedIn profile" class="icon" /></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about">
+                <p class="section__text__p1">Get To Know More</p>
+                <h1 class="title">About Me</h1>
+                <div class="section-container">
+                    <div class="section__pic-container">
+                        <img src="public/soft-skills.png" alt="Profile picture" class="about-pic" />
+                    </div>
+                    <div class="about-details-container">
+                        <div class="text-container">
+                            <p>
+                                Passionate, dedicated and highly skilled web developer with expertise in building and
+                                maintaining responsive applications with JS and modern frameworks and libraries.
+                                Constantly seeking new challenges and opportunities to improve my skills and learn new
+                                technologies. Confident to bring value to any team and project.
+                            </p>
+                        </div>
+                        <div class="about-containers">
+                            <div class="details-container">
+                                <img src="public/education.png" alt="Education icon" class="icon" />
+                                <h3 class="about-heading">Education</h3>
+                                <p><a class="about-link" href="https://softuni.bg/professions/javascript"
+                                        target="_blank" rel="noopener noreferrer">JavaScript Web Development<br>Software University - Sofia</a>
+                                </p>
+                                <p><a class="about-link" href="https://mgu.bg/en/masters-programmes/computer-technologies-in-engineering/"
+                                    target="_blank" rel="noopener noreferrer">Computer Technologies in Engineering<br>University of Mining and Geology - Sofia</a>
+                            </p>
+                            </div>
+                            <div class="details-container">
+                                <img src="public/experience.png" alt="Experience icon" class="icon" />
+                                <h3 class="about-heading">Certificates</h3>
+                                <p><a class="about-link" href="https://softuni.bg/certificates/details/182948/0b10852e"
+                                        target="_blank" rel="noopener noreferrer">Angular - 07/2023</a></p>
+                                <p><a class="about-link" href="https://softuni.bg/certificates/details/175191/f64ec704"
+                                        target="_blank" rel="noopener noreferrer">JS
+                                        Back-End - 05/2023</a></p>
+                                <p><a class="about-link" href="https://softuni.bg/certificates/details/160272/f1e8eb72"
+                                        target="_blank" rel="noopener noreferrer">JS
+                                        Advanced - 01/2023</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="public/arrow.png" alt="Arrow icon" class="icon arrow"
+                    onclick="location.href='./#experience'" />
+            </section>
+
+            <section id="experience">
+                <p class="section__text__p1">Explore My</p>
+                <h1 class="title">Experience</h1>
+                <div class="experience-details-container">
+                    <div class="about-containers">
+
+                        <div class="details-container">
+                            <h2 class="experience-sub-title">Front-End Development</h2>
+                            <div class="article-container">
+                                <article>
+                                    <img src="public/icons/javascript.svg" alt="Experience icon" class="icon" />
+                                    <div>
+                                        <h3>JavaScript</h3>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img src="public/icons/html5.svg" alt="Experience icon" class="icon" />
+                                    <div>
+                                        <h3>HTML</h3>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img src="public/icons/css3.svg" alt="Experience icon" class="icon" />
+                                    <div>
+                                        <h3>CSS</h3>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img src="public/icons/typescript.svg" alt="Experience icon"
+                                        class="icon" />
+                                    <div>
+                                        <h3>TypeScript</h3>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img src="public/icons/react.svg" alt="Experience icon" class="icon" />
+                                    <div>
+                                        <h3>React</h3>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img src="public/icons/angular.svg" alt="Experience icon" class="icon" />
+                                    <div>
+                                        <h3>Angular</h3>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img src="public/icons/tailwindcss.svg" alt="Experience icon" class="icon" />
+                                    <div>
+                                        <h3>Tailwind</h3>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img src="public/icons/bootstrap.svg" alt="Experience icon" class="icon" />
+                                    <div>
+                                        <h3>Bootstrap</h3>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img src="public/icons/github.svg" alt="Experience icon" class="icon" />
+                                    <div>
+                                        <h3>Github</h3>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <div class="details-container">
+                            <h2 class="experience-sub-title">Back-End Development</h2>
+                            <div class="article-container">
+                                <article>
+                                    <img src="public/icons/nodejs.svg" alt="Experience icon" class="icon" />
+                                    <div>
+                                        <h3>Node.js</h3>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img src="public/icons/expressjs.svg" alt="Experience icon" class="icon" />
+                                    <div>
+                                        <h3>Express</h3>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img src="public/icons/mongodb.svg" alt="Experience icon" class="icon" />
+                                    <div>
+                                        <h3>MongoDB</h3>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img src="public/icons/mongoose.svg" alt="Experience icon" class="icon" />
+                                    <div>
+                                        <h3>Mongoose</h3>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img src="public/icons/handlebars.svg" alt="Experience icon" class="icon" />
+                                    <div>
+                                        <h3>Handlebars</h3>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img src="public/icons/jwt.svg" alt="Experience icon" class="icon" />
+                                    <div>
+                                        <h3>JWT</h3>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img src="public/icons/render.svg" alt="Experience icon" class="icon" />
+                                    <div>
+                                        <h3>Render</h3>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img src="public/icons/mongo-atlas.svg" alt="Experience icon" class="icon" />
+                                    <div>
+                                        <h3>Mongo Atlas</h3>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img src="public/icons/postman.svg" alt="Experience icon" class="icon" />
+                                    <div>
+                                        <h3>Postman</h3>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-details-container">
+                    <div class="about-containers">
+
+                        <div class="details-container">
+                            <h2 class="experience-sub-title">Source control & Hosting</h2>
+                            <div class="article-container">
+                                <article>
+                                    <img src="public/icons/git-icon.svg" alt="Experience icon" class="icon" />
+                                    <div>
+                                        <h3>Git</h3>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img src="public/icons/firebase.svg" alt="Experience icon" class="icon" />
+                                    <div>
+                                        <h3>Firebase</h3>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img src="public/icons/netlify.svg" alt="Experience icon" class="icon" />
+                                    <div>
+                                        <h3>Netlify</h3>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <div class="details-container">
+                            <h2 class="experience-sub-title">Testing Frameworks</h2>
+                            <div class="article-container">
+                                <article>
+                                    <img src="public/icons/jest.svg" alt="Experience icon" class="icon" />
+                                    <div>
+                                        <h3>Jest</h3>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img src="public/icons/mocha.svg" alt="Experience icon" class="icon" />
+                                    <div>
+                                        <h3>Mocha</h3>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img src="public/icons/jasmine.svg" alt="Experience icon" class="icon" />
+                                    <div>
+                                        <h3>Jasmine</h3>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="public/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+            </section>
+
+            <section id="projects">
+                <p class="section__text__p1">Browse My Recent</p>
+                <h1 class="title">Projects</h1>
+                <div class="experience-details-container">
+                    <div class="about-containers">
+                        <div class="details-container color-container">
+                            <div class="article-container">
+                                <img src="public/travelr.png" alt="Project 1" class="project-img" />
+                            </div>
+                            <h2 class="experience-sub-title project-title">travelR</h2>
+                            <div class="btn-container">
+                                <a href="https://github.com/AbyssKnight7aken/travelr" target="_blank" rel="noopener noreferrer"><button
+                                        class="btn btn-color-2 project-btn">
+                                        Github
+                                    </button></a>
+                                <a href="https://travelr-web-application.netlify.app" target="_blank" rel="noopener noreferrer"><button
+                                        class="btn btn-color-2 project-btn">
+                                        Live Demo
+                                    </button></a>
+                            </div>
+                        </div>
+                        <div class="details-container color-container">
+                            <div class="article-container">
+                                <img src="public/tetris-react.png" alt="Project 2" class="project-img" />
+                            </div>
+                            <h2 class="experience-sub-title project-title">Tetris-React</h2>
+                            <div class="btn-container">
+                                <a href="https://github.com/AbyssKnight7aken/tetris-react" target="_blank" rel="noopener noreferrer"><button
+                                        class="btn btn-color-2 project-btn">
+                                        Github
+                                    </button></a>
+                                <a href="https://github.com/AbyssKnight7aken/tetris-react" target="_blank" rel="noopener noreferrer"><button
+                                        class="btn btn-color-2 project-btn" disabled>
+                                        Developing...
+                                    </button></a>
+                            </div>
+                        </div>
+                        <div class="details-container color-container">
+                            <div class="article-container">
+                                <img src="public/my-website.png" alt="Project 3" class="project-img" />
+                            </div>
+                            <h2 class="experience-sub-title project-title">My-Website</h2>
+                            <div class="btn-container">
+                                <a href="https://github.com/AbyssKnight7aken/my-website" target="_blank" rel="noopener noreferrer"><button
+                                        class="btn btn-color-2 project-btn">Github</button></a>
+                                <a href="#"><button
+                                        class="btn btn-color-2 project-btn">Live Demo</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="public/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+            </section>
+
+            <section id="contact">
+                <p class="section__text__p1">Get in Touch</p>
+                <h1 class="title">Contact Me</h1>
+                <div class="contact-info-upper-container">
+                    <div class="contact-info-container">
+                        <img src="public/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                        <p><a href="mailto:radoslav.petrov.official@gmail.com ">Send me mail</a>
+                        </p>
+                    </div>
+                    <div class="contact-info-container">
+                        <img src="public/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                        <p><a href="https://www.linkedin.com/in/radoslav-petrov-920a9b12a/" target="_blank" rel="noopener noreferrer">Visit my
+                                LinkedIn</a></p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2023 Radoslav Petrov. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
 </body>
+
 </html>
